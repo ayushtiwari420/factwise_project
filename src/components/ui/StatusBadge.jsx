@@ -1,0 +1,2 @@
+const styles = { Pending: 'warning', Completed: 'success', Overdue: 'danger', Eligible: 'success', 'Ready for clinical review': 'success', 'Evidence incomplete': 'warning', 'Not ready': 'danger', Critical: 'danger', Admitted: 'info', Discharged: 'neutral', 'Not eligible': 'warning', Recorded: 'success', 'Not recorded': 'neutral' };
+export default function StatusBadge({ children, tone }) { const label = children || 'Unknown'; return <span className={`status-badge status-badge--${tone || styles[label] || 'neutral'}`}>{label}</span>; }

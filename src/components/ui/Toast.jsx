@@ -1,0 +1,2 @@
+import { CheckCircle2, AlertTriangle, X } from 'lucide-react';
+export default function Toast({ toast, onClose }) { if (!toast) return null; const Icon = toast.tone === 'error' ? AlertTriangle : CheckCircle2; return <div className={`toast toast--${toast.tone}`} role="status"><Icon size={18} /><span>{toast.message}</span><button aria-label="Dismiss notification" onClick={onClose}><X size={16} /></button></div>; }
