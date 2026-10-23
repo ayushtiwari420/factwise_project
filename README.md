@@ -26,4 +26,4 @@ Discharge eligibility requires an actual temperature reading for every consecuti
 
 ## Deployment
 
-The Vite production build is ready for static hosting. A Git repository, GitHub push, and Vercel deployment have not been configured in this workspace.
+The Vite production build is ready for static hosting. Client-side routes are supported by `vercel.json`. A GitHub remote and Vercel deployment still need account authorization.
